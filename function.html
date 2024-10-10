@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button
+    >CLick me</button>
+    <p id="demo"></p>
+    <script>
+//      function toCelsius(fahrenheit) {
+//   return (5/9) * (fahrenheit-32);
+// }
+
+// let value = toCelsius(100);
+//     console.log(value)
+
+//     document.getElementById("demo").innerHTML = value
+const name = ()=>{
+    return "saif Ur rehman"
+}
+
+const fullName = name()
+    document.getElementById("demo").innerHTML = fullName.toUpperCase()
+    const todayDate = new Date()
+    const toDay = todayDate.getMonth()
+    const minutes = todayDate.getMinutes()
+    const hour = todayDate.getHours()
+    const second = todayDate.getSeconds()
+    const time = `${hour} : ${minutes} : ${second}`
+    // document.getElementById("demo").innerHTML = time
+    setInterval(function () {document.getElementById("demo").innerHTML = time}, 1000);
+
+
+    </script>
+</body>
+</html>
